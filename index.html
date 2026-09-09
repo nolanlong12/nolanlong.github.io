@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nolan Long | Data Science Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #f5f7fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #172a3a, #28536b);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.2rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            display: block;
+            padding: 16px 20px;
+            color: #172a3a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background: #e8eef2;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 70px 25px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: #172a3a;
+        }
+
+        .about {
+            background: white;
+            margin-top: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #28536b;
+            margin-bottom: 12px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #28536b;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+        }
+
+        .button {
+            display: inline-block;
+            background: #28536b;
+            color: white;
+            padding: 13px 22px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background: #172a3a;
+        }
+
+        .contact-box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        footer {
+            background: #172a3a;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.3rem;
+            }
+
+            nav a {
+                padding: 12px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Nolan Long</h1>
+        <p>Data Science Student | Warren Wilson College</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#thesis">Future Thesis</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+
+        <p>
+            Hello! My name is Nolan Long, and I am a Data Science student
+            at Warren Wilson College.
+        </p>
+
+        <p>
+            I am interested in using data to better understand problems,
+            identify patterns, and develop useful solutions. My academic
+            interests include programming, data analysis, databases, and
+            statistical modeling.
+        </p>
+
+        <p>
+            Outside of academics, I enjoy soccer, hiking, fishing, football,
+            video games, movies, and television.
+        </p>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume">
+        <h2>Resume</h2>
+
+        <div class="card">
+            <h3>My Resume</h3>
+
+            <p>
+                My resume includes my education, work experience,
+                technical skills, and other qualifications.
+            </p>
+
+            <a class="button" href="resume.pdf" target="_blank">
+                View My Resume
+            </a>
+        </div>
+    </section>
+
+    <!-- FUTURE THESIS -->
+    <section id="thesis">
+        <h2>Future Thesis</h2>
+
+        <div class="card">
+            <h3>Future Data Science Thesis</h3>
+
+            <p>
+                My future thesis will explore a data science topic that
+                combines data analysis, modeling, and real-world applications.
+            </p>
+
+            <p>
+                As I continue my studies at Warren Wilson College, I plan
+                to develop my research interests and determine a specific
+                thesis topic. This section will be updated as my research
+                develops.
+            </p>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Data Science Project</h3>
+
+                <p>
+                    This is a current or future data science project.
+                    I plan to use programming, data cleaning, analysis,
+                    and modeling to investigate a real-world question.
+                </p>
+
+                <p>
+                    More information, code, and results will be added
+                    as the project develops.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Future Project</h3>
+
+                <p>
+                    This section will showcase another project that
+                    demonstrates my growth as a data science student.
+                </p>
+
+                <p>
+                    Future projects may include data analysis,
+                    visualization, databases, or machine learning.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills">
+
+            <span class="skill">Python</span>
+            <span class="skill">R</span>
+            <span class="skill">pandas</span>
+            <span class="skill">Data Cleaning</span>
+            <span class="skill">Databases</span>
+            <span class="skill">Model Building</span>
+            <span class="skill">Statistical Modeling</span>
+            <span class="skill">Nonlinear Models</span>
+            <span class="skill">Complex Models</span>
+            <span class="skill">Google Sheets</span>
+            <span class="skill">Canva</span>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <div class="contact-box">
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:nolanwlong5@gmail.com">
+                    nolanwlong5@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>Phone:</strong>
+                (843) 957-0713
+            </p>
+
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/" target="_blank">
+                    My GitHub
+                </a>
+            </p>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Nolan Long | Data Science Portfolio</p>
+    </footer>
+
+</body>
+</html>
